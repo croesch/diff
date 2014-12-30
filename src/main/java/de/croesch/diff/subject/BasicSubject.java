@@ -31,4 +31,9 @@ public abstract class BasicSubject<CT extends Object> implements Subject {
   protected CT getContent() {
     return content;
   }
+
+  @Override
+  public String toString() {
+    return super.toString() + " >" + content + "<";
+  }
 }
