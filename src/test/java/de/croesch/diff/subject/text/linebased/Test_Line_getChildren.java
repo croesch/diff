@@ -23,11 +23,6 @@ public class Test_Line_getChildren {
   }
 
   @Test
-  public void should_Add_NewLine_As_Character() {
-    assertThat(new Line("super\n").getChildren()).containsExactly(new Word("super"), new Character('\n'));
-  }
-
-  @Test
   public void should_Add_White_Spaces_As_Character() {
     assertThat(new Line("one word\tis").getChildren()).containsExactly(new Word("one"), new Character(' '), new Word
         ("word"), new Character('\t'), new Word("is"));
